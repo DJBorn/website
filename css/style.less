@@ -1,20 +1,51 @@
-@title-font-color: #ffffff;
-@title-font-family: 'Josefin Sans', 'Bowhouse-Light', "Arial Black", "Lucida Sans Unicode";
-@title-font-size: 80px;
-@title-intial-opacity: 0;
-@title-position: absolute;
-@title-top: 20%;
-@title-left: 50%;
-@title-margin-right: -50%;
-@title-x-transform: -50%;
-@title-y-transform: -50%;
+@title_font_color: #ffffff;
+@default_dark_color: #2C2C2C;
+@title_font_family: 'Josefin Sans', "Arial Black", "Lucida Sans Unicode";
+@title_font_size: 80px;
+@title_intial_opacity: 0;
+@center_position: absolute;
+@title_top: 20%;
+@title_left: 50%;
+@title_margin_right: -50%;
+@title_x_transform: -50%;
+@title_y_transform: -50%;
+
+.text_block {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: @default_dark_color;
+    font-family: @title_font_family;
+    font-size: 20px;
+    text-align: center;
+}
+
+.my_button {
+    color: @default_dark_color;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid @default_dark_color;
+    padding: 20px;
+    outline: none;
+    text-decoration: none;
+    transition: background-color .5s, color .5s;
+    font-family: @title_font_family;
+}
+
+.my_button:hover {
+    background-color: @default_dark_color;
+    color: white;
+}
+
+#center {
+    position: @center_position;
+}
 
 #title_font {
-    color: @title-font-color;
-    font-family: @title-font-family;
-    font-size: @title-font-size;
-    position: @title-position;
-    opacity: @title-intial-opacity;
+    color: @title_font_color;
+    font-family: @title_font_family;
+    font-size: @title_font_size;
+    position: @center_position;
+    opacity: @title_intial_opacity;
 }
 
 html, body {
@@ -28,10 +59,6 @@ html, body {
     height: 2500px;
 }
 
-@font-face {
-    font-family: 'Bowhouse-Light';
-    src: url('../assets/Bowhouse-Light.otf');
-}
 
 @import url('https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Prompt');
 
@@ -127,7 +154,7 @@ html, body {
         top: 20%; 
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, 10%);
+        transform: translate(-50%, 100%);
         opacity: 0;
     }
     100% {
@@ -139,10 +166,53 @@ html, body {
     }
 }
 
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: auto;
+    }
+    50% {
+        opacity: 0;
+        height: auto;
+        width: auto;
+    }
+    100% {
+        opacity: 1;
+        height: auto;
+        width: auto;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 #title1 {
     animation-name: title;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
     animation-delay: .5s;
     #title_font
 }
@@ -151,6 +221,7 @@ html, body {
     animation-name: title2;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
     animation-delay: 2s;
     #title_font
 }
@@ -159,6 +230,7 @@ html, body {
     animation-name: title3;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
     animation-delay: 2s;
     #title_font
 }
@@ -167,8 +239,79 @@ html, body {
     animation-name: title4;
     animation-duration: .8s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
     animation-delay: 3.3s;
     #title_font
+}
+
+#bio {
+    opacity: 0;
+}
+
+
+#skills {
+    opacity: 0;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    #skills {
+    }
+  }
+  
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    #skills {
+      /* On small screens, we are no longer using row direction but column */
+    }
+    .box2 {
+        flex: 1 auto;
+    }
+    .box3 {
+        flex: 1 auto;
+    }
+
+  }
+  
+
+.box {
+    flex: 1;
+    height: 100px;
+    width: 100px;
+}
+
+#long_bio_desc {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    //transform: translate(0, -100%);
+    //margin-top: 100%;
+    //display: none;
+}
+
+.reveal {
+    animation-name: reveal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 #profile_image {
