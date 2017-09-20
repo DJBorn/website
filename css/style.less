@@ -257,33 +257,16 @@ html, body {
     display: -ms-flexbox;
     display: -webkit-flex;
     flex-flow: row wrap;
+    justify-content: left;
 }
 
-/* Medium screens */
-@media all and (max-width: 800px) {
-    #skills {
-    }
-  }
-  
-  /* Small screens */
-  @media all and (max-width: 500px) {
-    #skills {
-      /* On small screens, we are no longer using row direction but column */
-    }
-    .box2 {
-        flex: 1 auto;
-    }
-    .box3 {
-        flex: 1 auto;
-    }
-
-  }
-  
 
 .box {
-    flex: 1;
-    height: 100px;
-    width: 100px;
+    flex-grow: 1;
+    width: 300px;
+}
+.box2 {
+    height: 300px;
 }
 
 #long_bio_desc {
