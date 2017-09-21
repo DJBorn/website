@@ -1,6 +1,5 @@
 jQuery(document).ready(function() {
-    beginCSSAnimation('#bio', 'fadeIn');
-    beginCSSAnimation('#skills', 'fadeIn');
+    beginCSSAnimation('.fade_in', 'fadeIn');
 });
 
 function beginCSSAnimation(element, addClass) {

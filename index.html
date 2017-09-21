@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width">
         <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/tether.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
         <script src="./js/jquery.viewportchecker.min.js"></script>
         <script src="./js/main.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Prompt" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Prompt|Maven+Pro" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div id="profile_image">
-            <div id="title1">Hey</div>
-            <div id="title2">I'm</div>
-            <div id="title3">Daniel Jung</div>
-            <div id="title4">Software Developer</div>
+            <div id="title1" class="title_font">Hey</div>
+            <div id="title2" class="title_font">I'm</div>
+            <div id="title3" class="title_font">Daniel Jung</div>
+            <div id="title4" class="occupation">Software Developer</div>
         </div>
         <div id="bio" class="text_block">
-            <br/>
-            <b>About me</b><br/><br/>
-            <div id="short_bio_desc">
+            <br/><br/>
+            <div id="short_bio_desc" class="fade_in">
                 I'm a passionate developer. I love creating software that will better someones life in one way or another. <br/><br/>
                 I have have the most experience in web technologies, however I am open to explore different areas in software. I love a challenge!
                 <br/><br/></div>
-            
-            <div id="long_bio_desc">This is just a very very very very very very very very very very very very very very
-                    very very very very very very very very very very very very very very very very very very very very very
-                    very very very very very very very very very very very very very very very very very very very very very
-                    very very very very very very very very very very very very very very very very very very very very very
-                    very very very very very very very very very very very very very very very very very very very very very
-                    very very very very very very very very very very very very very very long description
-            <br/><br/>
             </div>
             <!-- <button id="bio_button" class="my_button" onclick="open_long_desc()">Full Description</button> -->
         </div>
         <div id="skills">
-            <div class="box1 box" style="background-color:greenyellow">box1</div>
-            <div class="box2 box" style="background-color:brown">box2</div>
-            <div class="box3 box" style="background-color:blueviolet">box3</div>
+            <div class="skill_group fade_in">
+                <div class="skill_box text_block_box fade_in">
+                    <b>What I'm using now</b>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Node</li>
+                        <li>HTML5</li>
+                        <li>Less</li>
+                    </ul>
+                </div>
+                <div class="skill_box text_block_box fade_in">
+                    <b>Proficient</b>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>C++</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill_group">
+                <div class="skill_box text_block_box fade_in">
+                    <b>Prior Experience</b>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>AngularJS</li>
+                        <li>jQuery</li>
+                        <li>Linux</li>
+                        <li>Clojure</li>
+                        <li>RESTful API</li>
+                        <li>Oracle</li>
+                        <li>PL/SQL</li>
+                    </ul>
+                </div>
+                <div class="skill_box text_block_box fade_in">
+                    <b>What I will learn</b>
+                    <ul>
+                        <li>Anything!</li>
+                        <li>Everything!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="projects_image">
+            <div class="sub_title">PROJECTS</div>
         </div>
         <div style="height:500px; width: 100%;background-color: blue"></div>
-        <div id="filler"></div>
     </body>
 </html>
