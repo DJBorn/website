@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width">
         <script src="./js/jquery-3.2.1.min.js"></script>
         <script src="./js/tether.min.js"></script>
@@ -17,17 +18,16 @@
             <div id="title3" class="title_font">Daniel Jung</div>
             <div id="title4" class="occupation">Software Developer</div>
         </div>
-        <div id="bio" class="text_block">
+        <div id="bio">
             <br/><br/>
-            <div id="short_bio_desc" class="fade_in">
-                I'm a passionate developer. I love creating software that will better someones life in one way or another. <br/><br/>
-                I have have the most experience in web technologies, however I am open to explore different areas in software. I love a challenge!
-                <br/><br/></div>
-            </div>
-            <!-- <button id="bio_button" class="my_button" onclick="open_long_desc()">Full Description</button> -->
+            <div id="short_bio_desc" class="fade_in text_block">
+                I'm a passionate developer. My motivation is creating software that will better someone's life in one way or another. <br/><br/>
+                Most of my experience is in web technologies, however I am open to explore different areas in software. I love a challenge!
+            <br/><br/></div>
         </div>
-        <div id="skills">
-            <div class="skill_group fade_in">
+        <hr class="fade_in">
+        <div class="flex_container">
+            <div class="flex_group">
                 <div class="skill_box text_block_box fade_in">
                     <b>What I'm using now</b>
                     <ul>
@@ -48,7 +48,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="skill_group">
+            <div class="flex_group">
                 <div class="skill_box text_block_box fade_in">
                     <b>Prior Experience</b>
                     <ul>
@@ -73,6 +73,52 @@
         </div>
         <div id="projects_image">
             <div class="sub_title">PROJECTS</div>
+            
+        </div>
+        <div class="flex_container">
+            <div class="flex_group">
+                <div class="project_container text_block_box fade_in">
+                    <b>Deluxema1</b><br/><br/>
+                    <div class="video_container">
+                        <video id="deluxema_video" autoplay="autoplay" loop>
+                            <source src="./assets/deluxema_video.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+                <div class="project_container text_block_box fade_in">
+                    <b>Deluxema2</b><br/><br/>
+                    <div class="video_container">
+                        <video id="deluxema_video" autoplay="autoplay" loop>
+                            <source src="./assets/deluxema_video.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_group">
+                    <div class="project_container text_block_box fade_in">
+                    <b>Deluxema3</b><br/><br/>
+                    <div class="video_container">
+                        <video id="deluxema_video" autoplay="autoplay" loop>
+                            <source src="./assets/deluxema_video.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+                <div class="project_container text_block_box fade_in">
+                    <b>Deluxema4</b><br/><br/>
+                    <div class="video_container">
+                        <video id="deluxema_video" autoplay="autoplay" loop>
+                            <source src="./assets/deluxema_video.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="past_work_image">
+            <div class="sub_title">WORK EXPERIENCE</div>
         </div>
         <div style="height:500px; width: 100%;background-color: blue"></div>
     </body>
