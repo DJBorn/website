@@ -1,18 +1,40 @@
 addEventListener('scroll', function() {
-    var fadeElements = document.getElementsByClassName("fade_in");
-    for(i = 0; i < fadeElements.length; i++) {
-        if(!fadeElements.item(i).classList.contains("reveal")) {
+    timedAnimation("fade_in", "reveal");
+    timedAnimation("slide_in", "slideIn");
+});
+
+function timedAnimation(trigger, animation) {
+    var elements = document.getElementsByClassName(trigger);
+    for(let i = 0; i < elements.length; i++) {
+        if(!elements.item(i).classList.contains(animation)) {
             var pageDimensions = {
                 left: 0,
                 top: 0,
                 width: window.innerWidth,
                 height: window.innerHeight
             };
-            if(intersecting(fadeElements.item(i).getBoundingClientRect(), pageDimensions))
-                fadeElements.item(i).className += " reveal";
+            if(intersecting(elements.item(i).getBoundingClientRect(), pageDimensions))
+            elements.item(i).className += " " + animation;
         }
     }
-})
+}
+
+addEventListener('touchstart', function() {
+    var tn_background = document.getElementsByClassName("thumbnail_background");
+    for(let i = 0; i < tn_background.length; i++) {
+        tn_background.item(i).style["background-color"] = "rgba(0, 0, 0, 0.7)";
+    }
+    
+    var tn_desc = document.getElementsByClassName("thumbnail_desc");
+    for(let i = 0; i < tn_desc.length; i++) {
+        tn_desc.item(i).style["-webkit-transform"] = "translate(0, -50%)";
+        tn_desc.item(i).style["-moz-transform"] = "translate(0, -50%)";
+        tn_desc.item(i).style["-o-transform"] = "translate(0, -50%)";
+        tn_desc.item(i).style["-ms-transform"] = "translate(0, -50%)";
+        tn_desc.item(i).style["transform"] = "translate(0, -50%)";
+        tn_desc.item(i).style["opacity"] = "1";
+    }
+});
 
 $(document).ready(function() {
     var fadeElements = document.getElementsByClassName("fade_in");
@@ -23,7 +45,7 @@ $(document).ready(function() {
          fadeElements.item(0).getBoundingClientRect().height !== undefined && 
          window.innerWidth !== undefined &&
          window.innerHeight !== undefined)) {
-        for(var i = 0; i < fadeElements.length; i++) {
+        for(let i = 0; i < fadeElements.length; i++) {
             fadeElements.item(i).style.opacity = 0;
         }
     }

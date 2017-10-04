@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56228722-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        gtag('config', 'UA-56228722-1');
+        </script>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width">
         <script src="./js/jquery-3.2.1.min.js"></script>
@@ -19,15 +27,15 @@
         </div>
         <div id="bio">
             <br/><br/>
-            <div id="short_bio_desc" class="fade_in text_block">
+            <div id="short_bio_desc" class="slide_in text_block">
                 I'm a passionate developer. My motivation is creating software that will better someone's life in one way or another. <br/><br/>
                 Most of my experience is in web technologies, however I am open to explore different areas in software. I love a challenge!
             <br/><br/></div>
         </div>
-        <hr class="fade_in">
+        <hr class="slide_in">
         <div class="flex_container">
             <div class="flex_group">
-                <div class="skill_box text_block_box fade_in">
+                <div class="flex_item default_padding text_block_box slide_in">
                     <b>What I'm using now</b>
                     <ul>
                         <li>JavaScript</li>
@@ -36,7 +44,7 @@
                         <li>Less</li>
                     </ul>
                 </div>
-                <div class="skill_box text_block_box fade_in">
+                <div class="flex_item default_padding text_block_box slide_in">
                     <b>Proficient</b>
                     <ul>
                         <li>JavaScript</li>
@@ -48,7 +56,7 @@
                 </div>
             </div>
             <div class="flex_group">
-                <div class="skill_box text_block_box fade_in">
+                <div class="flex_item default_padding text_block_box slide_in">
                     <b>Prior Experience</b>
                     <ul>
                         <li>Bootstrap</li>
@@ -61,7 +69,7 @@
                         <li>PL/SQL</li>
                     </ul>
                 </div>
-                <div class="skill_box text_block_box fade_in">
+                <div class="flex_item default_padding text_block_box slide_in">
                     <b>What I will learn</b>
                     <ul>
                         <li>Anything!</li>
@@ -75,24 +83,24 @@
         </div>
         <div class="flex_container">
             <div class="flex_group">
-                <div class="project_container text_block_box fade_in">
+                <div class="flex_item text_block_box fade_in">
                     <div class="thumbnail_container">
                         <div class="thumbnail_background">
                             <div class="thumbnail_desc">
                                 Connect 4<br/><br/>
-                                An online Connect 4 game for quick matches between friends<br/><br/>
+                                Online Connect 4 game for quick matches between friends<br/><br/>
                                 JavaScript Node.js Canvas CSS3
                             </div>
                         </div>
                         <img src="./assets/connect4_image.png">
                     </div>
                 </div>
-                <div class="project_container text_block_box fade_in">
+                <div class="flex_item text_block_box fade_in">
                     <div class="thumbnail_container">
                         <div class="thumbnail_background">
                             <div class="thumbnail_desc">
                                 Deluxema<br/><br/>
-                                A 2D action platformer<br/><br/>
+                                2D action platformer<br/><br/>
                                 JavaScript Phaser.io
                             </div>
                         </div>
@@ -101,19 +109,19 @@
                 </div>
             </div>
             <div class="flex_group">
-                    <div class="project_container text_block_box fade_in">
+                    <div class="flex_item text_block_box fade_in">
                     <div class="thumbnail_container">
                         <div class="thumbnail_background">
                             <div class="thumbnail_desc">
                                 X Mario<br/><br/>
-                                A 2D obstacle course platformer<br/><br/>
+                                2D obstacle course platformer<br/><br/>
                                 C++ XWindows
                             </div>
                         </div>
                         <img src="./assets/xmario_image.png">
                     </div>
                 </div>
-                <div class="project_container text_block_box fade_in">
+                <div class="flex_item text_block_box fade_in">
                     <div class="thumbnail_container">
                         <div class="thumbnail_background">
                             <div class="thumbnail_desc">
@@ -130,6 +138,82 @@
         <div id="past_work_image">
             <div class="sub_title">WORK EXPERIENCE</div>
         </div>
-        <div style="height:500px; width: 100%;background-color: blue"></div>
+        
+        <div class="flex_container">
+            <div class="flex_group">
+                <div class="flex_item default_padding text_block_box slide_in">
+                    <img class="past_work_img" src="./assets/BAML_logo.png"><br/>
+                    <b>Application Developer</b><br/>2016<br/><br/>
+                    Played a key role in developing additional features in an internal web applicaiton for managing employee entitlements.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Client onboarding POC (AngularJS, Angular Material)</li>
+                    </ul>
+                </div>
+                <div class="flex_item default_padding text_block_box slide_in">
+                    <img class="past_work_img" src="./assets/Christie_logo.png"><br/>
+                    <b>Software Developer</b><br/>2015<br/><br/>
+                    Part of an agile projector UI software team, implementing new features and fixing bugs.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>TCL script web interface (PHP, Bootstrap)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex_group">
+                <div class="flex_item default_padding text_block_box slide_in">
+                    <img class="past_work_img" src="./assets/YR_logo.png"><br/>
+                    <b>Special Project Assistant</b><br/>2014<br/><br/>
+                    Contributed to creating new features in existing applications and designing new ones.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>KPI application (Oracle APEX)</li>
+                    </ul>
+                </div>
+                <div class="flex_item default_padding text_block_box slide_in">
+                    <img class="past_work_img" src="./assets/Citi_logo.png"><br/>
+                    <b>Application Support Analyst</b><br/>2014<br/><br/>
+                    Contributed in daily support tasks while working on side projects including a web application demo.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Support web tool (HTML5, jQuery, jQueryUI)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="doing_now_image">
+            <div class="sub_title">WHAT I'M UP TO</div>
+        </div>
+        <div class="text_block">
+            <br/>
+            Well I've recently graduated from the University of Waterloo this past August and 
+            now I'm working on personal projects and reviewing my CS fundamentals in preparation for job searching.
+            Take a look at my <a href="https://github.com/DJBorn">Github</a> to see what I'm working on.<br/><br/>
+            My current goal is to be part of a software team that provides awesome products for awesome people and to really make an impact
+            wherever I am.<br/>
+            <br/>
+            <br/>
+        </div>
+        <footer>
+            <div class="footer_link fade_in">
+                <a href="mailto:idjung4@gmail.com">
+                    <img src="./assets/email_icon.png">
+                </a>
+            </div>
+            <div class="footer_link fade_in">
+                <a href="https://www.linkedin.com/in/idjung">
+                    <img src="./assets/linkedin_icon.png">
+                </a>
+            </div>
+            <div class="footer_link fade_in">
+                <a href="https://github.com/DJBorn">
+                    <img src="./assets/github_icon.png">
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
