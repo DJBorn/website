@@ -1,6 +1,7 @@
 addEventListener('scroll', function() {
     timedAnimation("fade_in", "reveal");
     timedAnimation("slide_in", "slideIn");
+    timedAnimation("scroll_down_reveal", "scroll_down_reveal")
 });
 
 window.onload = function () {
