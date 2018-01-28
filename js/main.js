@@ -3,11 +3,6 @@ addEventListener('scroll', function() {
     timedAnimation("slide_in", "slideIn");
 });
 
-window.onload = function () {
-    for(let i = 1; i <= 4; i++) 
-        document.getElementById("title" + i).className += " " + "title" + i + "_anim";
-}
-
 function timedAnimation(trigger, animation) {
     var elements = document.getElementsByClassName(trigger);
     for(let i = 0; i < elements.length; i++) {
