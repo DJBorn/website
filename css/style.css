@@ -206,9 +206,17 @@ footer {
   justify-content: space-evenly;
   align-content: space-around;
 }
-.flex_item {
-  flex: 0 1 1px;
-  min-width: 500px;
+@media screen and (max-width: 635px) and (min-width: 0px) {
+  .flex_item {
+    flex: 0 1 1px;
+    min-width: 320px;
+  }
+}
+@media screen and (min-width: 635px) {
+  .flex_item {
+    flex: 0 1 1px;
+    min-width: 500px;
+  }
 }
 .title_font {
   font-size: 80px;
