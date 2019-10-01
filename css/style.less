@@ -2,10 +2,11 @@
 @default_dark_color: #2C2C2C;
 @title_font_family: 'Maven Pro', 'Josefin Sans', "Arial Black", "Lucida Sans Unicode";
 @font_size_xlarge: 80px;
-@font_size_large: 50px;
+@font_size_large: 40px;
 @font_size_small: 30px;
 @font_size_xsmall: 20px;
 @font_size_xxsmall: 15px;
+@font_size_xxxsmall: 10px;
 @title_intial_opacity: 0;
 @center_position: absolute;
 @title_top: 20%;
@@ -278,24 +279,48 @@ footer {
     align-content: space-around;
 }
 
-// Small screen
-@media screen and (max-width: 635px) and (min-width: 0px) {
+// Extra Small Screen
+@media screen and (max-width: 400px) and (min-width: 0px) {
     .flex_item {
         position: relative;
         flex: 0 1 1px;
-        min-width: 320px;
+        min-width: 318px;
     }
     .computer_flex {
         position: relative;
         flex: 0 1 1px;
-        height: 340px;
-        min-width: 510px;
+        height: 212px;
+        min-width: 318px;
+    }
+    .thumbnail_desc {
+        font-size: @font_size_xxxsmall
+    }
+    .my_button {
+        padding: 5px;
+    }
+}
+
+// Small screen
+@media screen and (min-width: 400px) {
+    .flex_item {
+        position: relative;
+        flex: 0 1 1px;
+        min-width: 399px;
+    }
+    .computer_flex {
+        position: relative;
+        flex: 0 1 1px;
+        height: 266px;
+        min-width: 399px;
     }
     .title_font {
         font-size: @font_size_large;
     }
     .occupation {
         font-size: @font_size_xsmall;
+    }
+    .thumbnail_desc {
+        font-size: @font_size_xxsmall
     }
 }
 
@@ -318,6 +343,9 @@ footer {
     .occupation {
         font-size: @font_size_large;
     }
+    .thumbnail_desc {
+        font-size: @font_size_xsmall
+    }
 }
 
 .text_block {
@@ -336,9 +364,6 @@ footer {
     opacity: 0;
 }
 
-.default_padding {
-    padding: 20px;
-}
 
 .reveal {
     animation-name: reveal;
