@@ -141,10 +141,35 @@ footer {
     height: 100%;
 }
 
-.thumbnail_container {
+
+.laptop {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+	-webkit-transform:  translate(0, -50%);
+	-moz-transform:     translate(0, -50%);
+	-o-transform:       translate(0, -50%);
+	-ms-transform:      translate(0, -50%);
+	transform:          translate(0, -50%);
+}
+
+.laptop > img {
     width: 100%;
     height: 100%;
-    position: relative;
+}
+
+.thumbnail_container {
+    position: absolute;
+    top: 10.8%;
+    left: 16%;
+    height: 65.9%;
+    width: 68.3%;
+	-webkit-transform:  translate(0, 4.5%);
+	-moz-transform:     translate(0, 4.5%);
+	-o-transform:       translate(0, 4.5%);
+	-ms-transform:      translate(0, 4.5%);
+	transform:          translate(0, 4.5%);
 }
 
 .thumbnail_background {
@@ -163,24 +188,15 @@ footer {
 .thumbnail_background:hover {
     width: 100%;
     height: 100%;
-	-webkit-transition: all 1@thumbnail_animation_time ease;
-	-moz-transition: all @thumbnail_animation_time ease;
-	-o-transition: all @thumbnail_animation_time ease;
-	-ms-transition: all@thumbnail_animation_time ease;
-	transition: all @thumbnail_animation_time ease;
+    
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.thumbnail_desc {
+.thumbnail_animation {
+    position: relative;
     color: white;
-    padding: 10px;
-    margin-top: 40%;
-    
-	-webkit-transform: translate(0, -50%);
-	-moz-transform: translate(0, -50%);
-	-o-transform: translate(0, -50%);
-	-ms-transform: translate(0, -50%);
-	transform: translate(0, -50%);
+    top: 40%;
+    height: 100%;
     
 	-webkit-transition: all @thumbnail_animation_time ease;
 	-moz-transition: all @thumbnail_animation_time ease;
@@ -191,13 +207,11 @@ footer {
     opacity: 0;
 }
 
-.thumbnail_background:hover >.thumbnail_desc {
-    margin-top: 50%;
-	-webkit-transform: translate(0, -50%);
-	-moz-transform: translate(0, -50%);
-	-o-transform: translate(0, -50%);
-	-ms-transform: translate(0, -50%);
-	transform: translate(0, -50%);
+.thumbnail_background:hover >.thumbnail_animation {
+    position: relative;
+    top: 50%;
+    height: 100%;
+    
     
 	-webkit-transition: all @thumbnail_animation_time ease;
 	-moz-transition: all @thumbnail_animation_time ease;
@@ -205,6 +219,14 @@ footer {
 	-ms-transition: all @thumbnail_animation_time ease;
 	transition: all @thumbnail_animation_time ease;
     opacity: 1;
+}
+
+.thumbnail_desc {
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 }
 
 .thumbnail_container > img {
@@ -259,8 +281,15 @@ footer {
 // Small screen
 @media screen and (max-width: 635px) and (min-width: 0px) {
     .flex_item {
+        position: relative;
         flex: 0 1 1px;
         min-width: 320px;
+    }
+    .computer_flex {
+        position: relative;
+        flex: 0 1 1px;
+        height: 340px;
+        min-width: 510px;
     }
     .title_font {
         font-size: @font_size_large;
@@ -273,8 +302,15 @@ footer {
 // Not small screen
 @media screen and (min-width: 635px) {
     .flex_item {
+        position: relative;
         flex: 0 1 1px;
         min-width: 500px;
+    }
+    .computer_flex {
+        position: relative;
+        flex: 0 1 1px;
+        height: 400px;
+        min-width: 600px;
     }
     .title_font {
         font-size: @font_size_xlarge;

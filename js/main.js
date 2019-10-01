@@ -25,13 +25,11 @@ addEventListener('touchstart', function() {
         tn_background.item(i).style["background-color"] = "rgba(0, 0, 0, 0.7)";
     }
     
-    var tn_desc = document.getElementsByClassName("thumbnail_desc");
+    var tn_desc = document.getElementsByClassName("thumbnail_animation");
     for(let i = 0; i < tn_desc.length; i++) {
-        tn_desc.item(i).style["-webkit-transform"] = "translate(0, -50%)";
-        tn_desc.item(i).style["-moz-transform"] = "translate(0, -50%)";
-        tn_desc.item(i).style["-o-transform"] = "translate(0, -50%)";
-        tn_desc.item(i).style["-ms-transform"] = "translate(0, -50%)";
-        tn_desc.item(i).style["transform"] = "translate(0, -50%)";
+        tn_desc.item(i).style["position"] = "relative";
+        tn_desc.item(i).style["top"] = "50%";
+        tn_desc.item(i).style["height"] = "100%";
         tn_desc.item(i).style["opacity"] = "1";
     }
 });
