@@ -21,67 +21,89 @@
 
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width">
-        <link href="https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Prompt|Maven+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Asap|Josefin+Sans|Prompt|Maven+Pro|Varela+Round" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <div id="profile_image">
-            <div id="title1" class="title_font title1_anim">Hey</div>
-            <div id="title2" class="title_font title2_anim">I'm</div>
-            <div id="title3" class="title_font title3_anim">Daniel Jung</div>
-            <div id="title4" class="occupation title4_anim">Software Developer</div>
-            <div id="scroll_down">
-                <div>Scroll down</div>
-                <img id="scroll_down_arrow" src="./assets/icon-down-arrow-white.png">
+            <div class="blue_layer">
+                <div id="title3" class="title_font title3_anim">Daniel Jung</div>
+                <div id="title4" class="occupation title4_anim">Software Engineer</div>
+                <div class="profile_picture_container">
+                    <img src="./assets/headshot.jpg">
+                </div>
+                <div id="links">
+                    <div class="footer_link">
+                        <a href="mailto:idjung4@gmail.com">
+                            <img src="./assets/email_icon.png">
+                        </a>
+                    </div>
+                    <div class="footer_link">
+                        <a href="https://www.linkedin.com/in/idjung">
+                            <img src="./assets/linkedin_icon.png">
+                        </a>
+                    </div>
+                    <div class="footer_link">
+                        <a href="https://github.com/DJBorn">
+                            <img src="./assets/github_icon.png">
+                        </a>
+                    </div>
+                </div>
+                <div id="scroll_down">
+                    <div>Scroll down</div>
+                    <img id="scroll_down_arrow" src="./assets/icon-down-arrow-white.png">
+                </div>
             </div>
         </div>
-        <div id="bio">
-            <br/><br/>
+        <div class="primary_color">
+            <div class="sub_title fade_in">About Me</div>
             <div id="short_bio_desc" class="slide_in text_block">
-                With over 3 years industry experience working with software, I have exposure to a wide range of software tools and processes.<br/><br/>
-                I mostly create web applications, but love to apply my knowledge and craft wherever I can.
+                I am a backend engineer specializing in building APIs in Python Flask. I also have experience creating various scripts and applications in Python integrating with 3rd party APIs.<br/><br/>
+                Example projects include building discord bots, and scripts for interacting with Google Services (Youtube, Google Photos).
             <br/><br/></div>
+            <hr class="slide_in">
+            <div class="flex_container">
+                <div class="flex_item text_block_box slide_in">
+                    <b>What I'm working with now</b>
+                    <ul>
+                        <li>Python3</li>
+                        <li>Flask</li>
+                        <li>Docker</li>
+                        <li>Distributed Systems</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <b>Proficient</b>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>C++</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <b>Prior Experience</b>
+                    <ul>
+                        <li>React/Redux</li>
+                        <li>Bootstrap</li>
+                        <li>AngularJS</li>
+                        <li>Python</li>
+                        <li>jQuery</li>
+                        <li>Linux</li>
+                        <li>PHP</li>
+                        <li>Tableau</li>
+                        <li>Jest</li>
+                        <li>PL/SQL</li>
+                        <li>Less</li>
+                        <li>Perl</li>
+                        <li>Clojure</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <hr class="slide_in">
-        <div class="flex_container">
-            <div class="flex_item text_block_box slide_in">
-                <b>What I'm using now</b>
-                <ul>
-                    <li>Python3</li>
-                    <li>Flask</li>
-                    <li>Linux</li>
-                </ul>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <b>Proficient</b>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>React/Redux</li>
-                    <li>SQL</li>
-                    <li>C++</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                </ul>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <b>Prior Experience</b>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>AngularJS</li>
-                    <li>Python</li>
-                    <li>jQuery</li>
-                    <li>Linux</li>
-                    <li>PHP</li>
-                    <li>Tableau</li>
-                    <li>Jest</li>
-                    <li>PL/SQL</li>
-                    <li>Less</li>
-                    <li>Perl</li>
-                    <li>Clojure</li>
-                </ul>
-            </div>
-        </div>
-        <div id="projects_image">
+        <!-- <div class="blue_layer">
             <div class="sub_title fade_in">SIDE PROJECTS</div>
         </div>
         <div class="flex_container">
@@ -171,111 +193,77 @@
                     <img src="./assets/oldwebsite_video.gif">
                 </div>
             </div>
-        </div>
-        <div id="past_work_image">
-            <div class="sub_title fade_in">WORK EXPERIENCE</div>
-        </div>
+        </div> -->
+        <div class="accent_color">
+            <div class="sub_title fade_in">Work Experience</div>
         
-        <div class="flex_container">
-            <div class="flex_item text_block_box slide_in">
-                <img class="past_work_img" src="./assets/points_logo.png"><br/>
-                <b>Development Engineer</b><br/>2021 - Current<br/><br/>
-                Core engineer on the Loyalty Commerce Platform team, supporting and developing multiple microservices
-                <br/>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <img class="past_work_img" src="./assets/points_logo.png"><br/>
-                <b>Platform Specialist</b><br/>2020 - 2021<br/><br/>
-                Scoping, designing, and building the connection between Points loyalty services with partner API systems.
-                <br/><br/>
-                <b>Projects</b><br/>
-                <ul>
-                    <li>Enabling several core Points products via building API integration with partner systems</li>
-                    <li>Storefront Demo Page (HTML, CSS3, NodeJS)</li>
-                </ul>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <img class="past_work_img" src="./assets/swift_logo.png"><br/>
-                <b>BI Engineer</b><br/>2018 - 2019<br/><br/>
-                Responsible for reporting on key metrics, as well as developing on the flagship dashboard.
-                <br/><br/>
-                <b>Projects</b><br/>
-                <ul>
-                    <li>Heartbeat Metrics (Tableau, PSQL, BigQuery, Snowflake)</li>
-                    <li>Swift Dashboard (React, Redux, Jest)</li>
-                </ul>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <img class="past_work_img" src="./assets/BAML_logo.png"><br/>
-                <b>Application Developer</b><br/>2016<br/><br/>
-                Developed full-stack features on internal web application, designing backend REST APIs, as well as the frontend component.
-                <br/><br/>
-                <b>Projects</b><br/>
-                <ul>
-                    <li>Entitlements Application (AngularJS, Bootstrap, C#)</li>
-                    <li>Client onboarding POC (AngularJS, Angular Material)</li>
-                </ul>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <img class="past_work_img" src="./assets/Christie_logo.png"><br/>
-                <b>Software Developer</b><br/>2015<br/><br/>
-                Key member of an agile projector UI software team, implementing and maintaining new front-end features.
-                <br/><br/>
-                <b>Projects</b><br/>
-                <ul>
-                    <li>Fusion Projector UI (C++, Qt QML)</li>
-                    <li>TCL script web interface (PHP, Bootstrap)</li>
-                </ul>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <img class="past_work_img" src="./assets/YR_logo.png"><br/>
-                <b>Special Project Assistant</b><br/>2014<br/><br/>
-                Built a front end Oracle APEX application monitoring Wastewater metrics.
-                <br/><br/>
-                <b>Projects</b><br/>
-                <ul>
-                    <li>Wastewater KPI application (Oracle APEX)</li>
-                </ul>
-            </div>
-            <div class="flex_item text_block_box slide_in">
-                <img class="past_work_img" src="./assets/Citi_logo.png"><br/>
-                <b>Application Support Analyst</b><br/>2014<br/><br/>
-                Built a web application to automate support tasks while completing day to day support tasks.
-                <br/><br/>
-                <b>Projects</b><br/>
-                <ul>
-                    <li>Support web tool (Perl, HTML5, jQuery, jQueryUI)</li>
-                    <li>Production Server Report (Clojure)</li>
-                </ul>
+            <div class="flex_container">
+                <div class="flex_item text_block_box slide_in">
+                    <h2>Development Engineer</h2><h3>Plusgrade</h3>2021 - Current<br/><br/>
+                    Core engineer on the Loyalty Commerce Platform team, supporting and developing multiple microservices
+                    <br/>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <h2>Platform Specialist</h2><h3>Plusgrade</h3>2020 - 2021<br/><br/>
+                    Scoping, designing, and building the connection between Points loyalty services with partner API systems.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Enabling several core Points products via building API integration with partner systems</li>
+                        <li>Storefront Demo Page (HTML, CSS3, NodeJS)</li>
+                    </ul>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <h2>BI Engineer</h2><h3>Swift Medical</h3>2018 - 2019<br/><br/>
+                    Responsible for reporting on key metrics, as well as developing on the flagship dashboard.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Heartbeat Metrics (Tableau, PSQL, BigQuery, Snowflake)</li>
+                        <li>Swift Dashboard (React, Redux, Jest)</li>
+                    </ul>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <h2>Application Developer</h2><h3>Bank of America</h3>2016<br/><br/>
+                    Developed full-stack features on internal web application, designing backend REST APIs, as well as the frontend component.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Entitlements Application (AngularJS, Bootstrap, C#)</li>
+                        <li>Client onboarding POC (AngularJS, Angular Material)</li>
+                    </ul>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <h2>Software Developer</h2><h3>Christie Digital</h3>2015<br/><br/>
+                    Key member of an agile projector UI software team, implementing and maintaining new front-end features.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Fusion Projector UI (C++, Qt QML)</li>
+                        <li>TCL script web interface (PHP, Bootstrap)</li>
+                    </ul>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <h2>Special Project Assistant</h2><h3>York Region</h3>2014<br/><br/>
+                    Built a front end Oracle APEX application monitoring Wastewater metrics.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Wastewater KPI application (Oracle APEX)</li>
+                    </ul>
+                </div>
+                <div class="flex_item text_block_box slide_in">
+                    <h2>Application Support Analyst</h2><h3>Citigroup</h3>2014<br/><br/>
+                    Built a web application to automate support tasks while completing day to day support tasks.
+                    <br/><br/>
+                    <b>Projects</b><br/>
+                    <ul>
+                        <li>Support web tool (Perl, HTML5, jQuery, jQueryUI)</li>
+                        <li>Production Server Report (Clojure)</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div id="doing_now_image">
-            <div class="sub_title fade_in">WHAT I'M UP TO</div>
-        </div>
-        <div class="text_block slide_in">
-            <br/>
-            I'm currently at Points, working as a developer on the Points Loyalty Commerce Platform team.
-            We enable our customers to build the best loyalty programs in the world using our platform. 
-            Come see what products we offer at <a href="https://points.com">our homepage.</a><br/><br/>
-            <br/>
-        </div>
-        <footer>
-            <div class="footer_link fade_in">
-                <a href="mailto:idjung4@gmail.com">
-                    <img src="./assets/email_icon.png">
-                </a>
-            </div>
-            <div class="footer_link fade_in">
-                <a href="https://www.linkedin.com/in/idjung">
-                    <img src="./assets/linkedin_icon.png">
-                </a>
-            </div>
-            <div class="footer_link fade_in">
-                <a href="https://github.com/DJBorn">
-                    <img src="./assets/github_icon.png">
-                </a>
-            </div>
-        </footer>
         <script src="./js/jquery-3.2.1.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
